@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div class="mainContainer">
+      <div>
+        <img src="images/logo.png" alt="logo" />
+        <h2>Room Allocation System</h2>
+      </div>
+      
+      <div class="formContainer">
+        <form>
+          <div class="itemWrap">
+            <div class="item">
+              <label for="fname">Fullname:</label>
+              <input type="text" id="fname" name="fname" class="itemInput" />
+              <br />
+            </div>
+
+            <div class="item">
+              <label for="role">Role:</label>
+              <select id="role" name="role" class="itemInput" >
+                <option value="Facilitator">Facilitator</option>
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="javascript">javascript</option>
+              </select>
+            </div>
+
+            <div class="item">
+              <label for="room" >Select Room:</label>            
+              <select id="room" name="room" class="itemInput" >
+                <option value="1">Room1</option>
+                <option value="2">Room2</option>
+                <option value="3">Room3</option>
+              </select>
+            </div>
+
+            <div class="item">
+              <label>Gender:</label><br>
+              <label for="male" >male:</label>
+              <input type="radio" id="male" name="gender" value="male" />
+
+              <label for="female">female:</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <br />
+            </div>
+        </div>
+
+            <!--<label id="errors"></label>-->
+          <label id="success"></label>
+
+          <div>
+            <button type="submit" id="submit">Allocate Room</button>
+          </div>
+          <br>
+          <div class="display">
+            <button id="room1"> Room 1 </button >
+            <button  id="room2"> Room 2 </button >
+            <button  id="room3"> Room 3 </button >
+            <button id="room0"> All Rooms </button>
+            <table id="displayRooms">
+              <th>Room</th>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Gender</th>
+              
+            </table> 
+          </div>
+        </form>
+       
+        
+      </div>
+      
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
