@@ -1,0 +1,14 @@
+{
+  "name": "Rematch Todos Demo",
+  "version": "1.0.0",
+  "description": "Todos example of Rematch - a Redux framework.",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/92mk9n6vww",
+  "main": "index.js",
+  "dependencies": {
+    "react-redux": "5.0.6",
+    "react-dom": "16.0.0",
+    "react": "16.0.0",
+    "@rematch/core": "0.2.0"
+  }
+}
